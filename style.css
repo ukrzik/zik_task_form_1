@@ -1,0 +1,117 @@
+ody {
+    font-family: 'Palatino Linotype', serif;
+    max-width: 600px;
+    padding: 0px 30px;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+legend {
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+    /*background-color: red;*/
+}
+
+label {
+    /*width:110px;*/
+    display: inline-block;
+    vertical-align: 0px;
+    margin: 6px;
+    padding: 0px;
+    /*background-color: blue;*/
+}
+
+.box4 {
+    width: 10px;
+    /*height: 5px;*/
+    display: inline-block;
+    vertical-align: 0px;
+    margin: 10px;
+    padding: 0px;
+    background-color: yellow;
+}
+.box0 {
+    width: 10px;
+    display: inline-block;
+    vertical-align: 0px;
+    margin: 0px;
+    padding: 0px;
+    /*background-color: yellow;*/
+}
+.box1 {
+    width: 60px;
+    display: inline-block;
+    vertical-align: 0px;
+    margin: 0px;
+    padding: 0px;
+    /*background-color: yellow;*/
+}
+
+.box2 {
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    padding: 0px;
+    /*border: 1px solid blue;*/
+    /*background-color: blueviolet;*/
+}
+
+.box3 {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    padding: 0px;
+    /*border: 1px solid blue;*/
+    /*background-color: aquamarine;*/
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+    color: #ff0000;
+}
+
+input:focus {
+    background: #eaeaea;
+}
+
+input, textarea {
+    width: 249px;
+}
+
+textarea {
+    height: 100px;
+}
+
+select {
+    width: 254px;
+}
+
+input[type=checkbox] {
+    width: 10px;
+}
+
+input[type=submit] {
+    width: 170px;
+    padding: 10px;
+}
+/*вертикальний повзунок*/
+/*input.vertical { -webkit-appearance: slider-vertical;  writing-mode: bt-lr; }*/
+/*<input type=range min=0 max=100 value=50 class=vertical orient=vertical>*/
+
+.Label {
+    display: inline-block;
+    width: 125px;
+}

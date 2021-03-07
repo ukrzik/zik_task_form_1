@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<!--<html lang="ru">-->
+<head>
+    <meta charset="utf-8">
+    <title>урок "ФОРМИ": теги та їх атрибути</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<script src="script.js"></script>
+<h1>урок "ФОРМИ": теги та їх атрибути</h1>
+<h2>Трішки розкажіть про себе...</h2>
+<p><b>Спробуйте відтворити подібну форму. Для цілей демонстрації цілком підійдуть вигадані дані</b></p>
+<form action="#">
+    <fieldset>
+        <legend>Коротко про себе</legend>
+        <p><i>Будь ласка, заповніть форму. Обов'язкові поля позначені</i><em>*</em></p>
+        <label for="name">Ім'я: <em>*</em></label>
+        <input id="name" placeholder="Петро" autofocus required><br>
+        <label for="nickname">Прізвище:<em>*</em></label>
+        <input id="nickname" placeholder="Петрович"><br>
+        <label>Стать:</label>
+        <input type="radio" checked name="sex_0" id="sex1" class="box0"/><label for="sex1" class="box3">чол</label>
+        <input type="radio" name="sex_0" id="sex2" class="box0"/><label for="sex2" class="box3">жін</label><br>
+        <label for="age" >Вік:<em>*</em></label>
+        <input id="age" class="box1" required><label class="box2">років</label><br>
+<!--        <input type="radio" name="dva" id="dva1"/>-->
+<!--        <label for="dva1">чол</label>-->
+<!--        <input type="radio" name="dva" id="dva2"/>-->
+<!--        <label for="dva2">жін</label>&ndash;&gt;-->
+<!--        <label for="telephone">Телефон</label>-->
+<!--        <input id="telephone" placeholder="+38 (xxx) xxx-xxxx" required><br>-->
+
+    </fieldset>
+    <fieldset>
+        <legend>Більш детально про себе</legend>
+        <input type="radio" checked name="sex_1" id="sex3" class="box4"/><label for="sex3">Молодий хлопак</label><br>
+        <input type="radio" name="sex_1" id="sex4" class="box4"/><label for="sex4">Дівчина</label><br>
+        <input id="birthday" type="date" min="1940-01-01" max="2000-01-01">
+        <label for="birthday">День, місяць, рік народження<em>*</em></label><br>
+        <input id="married" placeholder="Так або Ні">
+        <label for="married">Сімейний стан<em>*</em></label>
+<!--            <select id="Married">-->
+<!--                <option value="conjugal">ТАК</option>-->
+<!--                <option value="Bachelor">НІ</option>-->
+<!--            </select>-->
+        <br>
+        <input id="public" placeholder="Громадська активність - Так або Ні">
+        <label for="public">Соціальний статус<em>*</em></label>
+<!--                    <select id="public">-->
+<!--                        <option value="social">ТАК</option>-->
+<!--                        <option value="independent">НІ</option>-->
+<!--                    </select>-->
+        <br>
+        <input id="residence" placeholder="населений пункт, країна">
+        <label for="residence">Місце проживання<em>*</em></label>
+        <br><br>
+        <p><b>Що ви зазвичай робите у вихідні дні:</b></p>
+        <label><input type="checkbox"/> Сплю</label><br>
+        <label><input type="checkbox"/> Відпочиваю з друзями</label><br>
+        <label><input type="checkbox"/> Рибалю</label><br>
+        <label><input type="checkbox"/> Активний геймер</label><br>
+        <label><input type="checkbox"/> Інше</label><br><br>
+        <p><b>Розповісти про форми в книзі, присвяченій HTML:</b></p>
+<!--        <datalist id="dl_fruits">-->
+<!--            <span class="Label">Выберите из списка:</span>-->
+<!--            <select id="favoriteFruite" size="3">-->
+<!--                <option label="Яблоко" value="apple">-->
+<!--                <option label="Ананас" value="ananas">-->
+<!--                <option label="Абрикос" value="apricot">-->
+<!--                <option label="Арбуз" value="watermelon">-->
+<!--                <option label="Авокадо" value="avocado">-->
+<!--                <option label="Апельсин" value="Orange">-->
+<!--            </select>-->
+<!--            <br>-->
+<!--            <span class="Label">Или введите вручную:</span>-->
+<!--        </datalist>-->
+<!--        <input id="fruit" list="dl_fruits"><br>-->
+<!--        <select onchange="top.location=this.value">-->
+<!--            <option value="http://mysite1.com">Сайт1</option>-->
+<!--            <option value="http://mysite2.com">Сайт2</option>-->
+<!--        </select>-->
+        <p><b>Яку кількість книг Ви прочитали за своє життя:</b></p>
+        <input type="radio" checked name="number" id="number1" class="box4"/><label for="number1">0 - 10</label><br>
+        <input type="radio" name="number" id="number2" class="box4"/><label for="number2">11 - 20</label><br>
+        <input type="radio" name="number" id="number3" class="box4"/><label for="number3">21 - 50</label><br>
+        <input type="radio" name="number" id="number4" class="box4"/><label for="number4">50 +</label><br>
+        <label for="comments">Ваші коменти:</label><br>
+        <textarea id="comments" oninput="validateComments(this)" spellcheck="true"></textarea><br>
+             <datalist id="dl_Position">
+                <select id="favoritePosition">
+                        <option value="Позиція перша">
+                        <option value="Позиція друга">
+                        <option value="Позиція третя">
+                </select>
+                <br>
+             </datalist>
+             <input id="Position" list="dl_Position"><label for="Position"></label><br>
+<!--    <label for="gender">Стать</label>-->
+<!--    <select id="gender">-->
+<!--        <option value="female">жінка</option>-->
+<!--        <option value="male">чоловік</option>-->
+<!--    </select><br>-->
+<!--        <label for="age">Возраст<em>*</em></label>-->
+<!--        <input id="age" required><br>-->
+<!--        <input id="age" type="range" min="0" max="120" value="0" required><br>-->
+<!--        <input id="age" type="number" min="18" max="100" step="1"><br>-->
+<!--        <label for="age">Дата рождения<em>*</em></label>  дата народження-->
+<!--        <input id="age" type="date" min="1920-01-01" max="2000-01-01"><br>-->
+<!--        <input type=range id="age" min=0 value=18 max=120 step=1 onchange="outputUpdate(value)">-->
+<!--        <output for=age id=Возраст>18</output><br>-->
+    </fieldset>
+    <fieldset>
+        <legend>І на заключення</legend>
+        <input id="Field" placeholder="Це поле було введено для Вас"><label for="Field"></label><br>
+        <label for="email">Email:<em>*</em></label><br>
+        <input id="email" lang="en" required><br><br>
+        <p><b>Бажаєте підписатися на саму моднячу розсилку спаму?</b></p>
+        <!--        <legend>Бажаєте підписатися на саму моднячу розсилку спаму?</legend>-->
+        <p><i>Виберіть категорію</i></p>
+        <label><input type="checkbox"/> Обладнання</label><br>
+        <label><input type="checkbox"/> Як приготувати обід?</label><br>
+        <label><input type="checkbox"/> Заробити мільйон за два дні</label><br><br>
+        <p><b>На скільки було складне завдання:</b></p>
+        <input type="radio" checked name="Complexity" id="number5" class="box4"/><label for="number5">
+        Зовсім не складно</label><br>
+        <input type="radio" name="Complexity" id="number6" class="box4"/><label for="number6">Так собі</label><br>
+        <input type="radio" name="Complexity" id="number7" class="box4"/><label for="number7">Ледве впорався</label><br>
+    </fieldset>
+    <p><input type="submit" value="Отправить информацию"></p>
+<!--    Відключити перевірку форми-->
+<!--    <p><input type="submit" value="Отправить информацию" formnovalidate></p>-->
+</form>
+</body>
+</html>

@@ -9,6 +9,7 @@
 </head>
 <body>
 <script src="script.js"></script>
+<div class="wrapper">
 <h1>урок "ФОРМИ": теги та їх атрибути</h1>
 <h2>Трішки розкажіть про себе...</h2>
 <p><b>Спробуйте відтворити подібну форму. Для цілей демонстрації цілком підійдуть вигадані дані</b></p>
@@ -23,15 +24,8 @@
         <label>Стать:</label>
         <input type="radio" checked name="sex_0" id="sex1" class="box0"/><label for="sex1" class="box3">чол</label>
         <input type="radio" name="sex_0" id="sex2" class="box0"/><label for="sex2" class="box3">жін</label><br>
-        <label for="age" >Вік:<em>*</em></label>
+        <label for="age">Вік:<em>*</em></label>
         <input id="age" class="box1" required><label class="box2">років</label><br>
-<!--        <input type="radio" name="dva" id="dva1"/>-->
-<!--        <label for="dva1">чол</label>-->
-<!--        <input type="radio" name="dva" id="dva2"/>-->
-<!--        <label for="dva2">жін</label>&ndash;&gt;-->
-<!--        <label for="telephone">Телефон</label>-->
-<!--        <input id="telephone" placeholder="+38 (xxx) xxx-xxxx" required><br>-->
-
     </fieldset>
     <fieldset>
         <legend>Більш детально про себе</legend>
@@ -63,40 +57,27 @@
         <label><input type="checkbox"/> Активний геймер</label><br>
         <label><input type="checkbox"/> Інше</label><br><br>
         <p><b>Розповісти про форми в книзі, присвяченій HTML:</b></p>
-<!--        <datalist id="dl_fruits">-->
-<!--            <span class="Label">Выберите из списка:</span>-->
-<!--            <select id="favoriteFruite" size="3">-->
-<!--                <option label="Яблоко" value="apple">-->
-<!--                <option label="Ананас" value="ananas">-->
-<!--                <option label="Абрикос" value="apricot">-->
-<!--                <option label="Арбуз" value="watermelon">-->
-<!--                <option label="Авокадо" value="avocado">-->
-<!--                <option label="Апельсин" value="Orange">-->
-<!--            </select>-->
-<!--            <br>-->
-<!--            <span class="Label">Или введите вручную:</span>-->
-<!--        </datalist>-->
-<!--        <input id="fruit" list="dl_fruits"><br>-->
-<!--        <select onchange="top.location=this.value">-->
-<!--            <option value="http://mysite1.com">Сайт1</option>-->
-<!--            <option value="http://mysite2.com">Сайт2</option>-->
-<!--        </select>-->
+<!-- Зсилка селек на сайт  -->
+        <select onchange="top.location=this.value">
+            <option value="http://rusych-horodyshche.blogspot.com/">Сайт1</option>
+            <option value="https://professorweb.ru/my/html/html5/level2/2_4.php">Сайт2</option>
+        </select><br><br>
         <p><b>Яку кількість книг Ви прочитали за своє життя:</b></p>
-        <input type="radio" checked name="number" id="number1" class="box4"/><label for="number1">0 - 10</label><br>
-        <input type="radio" name="number" id="number2" class="box4"/><label for="number2">11 - 20</label><br>
-        <input type="radio" name="number" id="number3" class="box4"/><label for="number3">21 - 50</label><br>
-        <input type="radio" name="number" id="number4" class="box4"/><label for="number4">50 +</label><br>
-        <label for="comments">Ваші коменти:</label><br>
+        <input type="radio" checked name="number" id="number1" class="box4"/>
+           <label for="number1">0 - 10</label><br>
+        <input type="radio" name="number" id="number2" class="box4"/>
+           <label for="number2">11 - 20</label><br>
+        <input type="radio" name="number" id="number3" class="box4"/>
+           <label for="number3">21 - 50</label><br>
+        <input type="radio" name="number" id="number4" class="box4"/>
+           <label for="number4">50 +</label><br>
+        <label for="comments"><b>Ваші коменти:</b></label><br>
         <textarea id="comments" oninput="validateComments(this)" spellcheck="true"></textarea><br>
-             <datalist id="dl_Position">
-                <select id="favoritePosition">
-                        <option value="Позиція перша">
-                        <option value="Позиція друга">
-                        <option value="Позиція третя">
-                </select>
-                <br>
-             </datalist>
-             <input id="Position" list="dl_Position"><label for="Position"></label><br>
+        <select name="ch" size="3">
+            <option selected="selected" value="1">Перша позиція</option>
+            <option value="2">Друга позиція</option>
+            <option value="3">Третя позиція</option>
+        </select><br>
 <!--    <label for="gender">Стать</label>-->
 <!--    <select id="gender">-->
 <!--        <option value="female">жінка</option>-->
@@ -125,12 +106,16 @@
         <p><b>На скільки було складне завдання:</b></p>
         <input type="radio" checked name="Complexity" id="number5" class="box4"/><label for="number5">
         Зовсім не складно</label><br>
-        <input type="radio" name="Complexity" id="number6" class="box4"/><label for="number6">Так собі</label><br>
-        <input type="radio" name="Complexity" id="number7" class="box4"/><label for="number7">Ледве впорався</label><br>
+        <input type="radio" name="Complexity" id="number6" class="box4"/>
+        <label for="number6">Так собі</label><br>
+        <input type="radio" name="Complexity" id="number7" class="box4"/>
+        <label for="number7">Ледве впорався</label><br>
     </fieldset>
-    <p><input type="submit" value="Отправить информацию"></p>
+        <button>Відправити дані</button>
+<!--    <p><input type="submit" value="Відправити дані"></p>-->
 <!--    Відключити перевірку форми-->
-<!--    <p><input type="submit" value="Отправить информацию" formnovalidate></p>-->
+<!--    <p><input type="submit" value="Відправити дані" formnovalidate></p>-->
 </form>
+</div>
 </body>
 </html>

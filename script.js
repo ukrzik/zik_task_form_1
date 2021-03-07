@@ -1,6 +1,6 @@
 function validateComments(input) {
     if (input.value.length < 20) {
-        input.setCustomValidity("Дайте более развернутый ответ.");
+        input.setCustomValidity("Дайте більш розширену відповідь.");
     }
     else {
         // Длина комментария отвечает требованию,
@@ -8,8 +8,6 @@ function validateComments(input) {
         input.setCustomValidity("");
     }
 }
-function outputUpdate(vol) {
-
-    document.querySelector('#Возраст').value = vol;
-
-}
+// function outputUpdate(vol) {
+//     document.querySelector('#Вік').value = vol;
+// }

@@ -1,15 +1,20 @@
-ody {
-    font-family: 'Palatino Linotype', serif;
-    max-width: 600px;
-    padding: 0px 30px;
+/*ody {*/
+/*    font-family: 'Palatino Linotype', serif;*/
+/*    max-width: 600px;*/
+/*    padding: 0 30px;*/
+/*}*/
+.wrapper {
+    width:600px;
+    /*height:350px;*/
+    margin:0 auto;
+    /*background: #369;*/
 }
-
 h1 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 p {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 fieldset {
@@ -18,7 +23,7 @@ fieldset {
 }
 
 legend {
-    padding: 0px 3px;
+    padding: 0 3px;
     font-weight: bold;
     font-variant: small-caps;
     /*background-color: red;*/
@@ -27,9 +32,9 @@ legend {
 label {
     /*width:110px;*/
     display: inline-block;
-    vertical-align: 0px;
+    vertical-align: 0;
     margin: 6px;
-    padding: 0px;
+    padding: 0;
     /*background-color: blue;*/
 }
 
@@ -37,25 +42,25 @@ label {
     width: 10px;
     /*height: 5px;*/
     display: inline-block;
-    vertical-align: 0px;
+    vertical-align: 0;
     margin: 10px;
-    padding: 0px;
+    padding: 0;
     background-color: yellow;
 }
 .box0 {
     width: 10px;
     display: inline-block;
-    vertical-align: 0px;
-    margin: 0px;
-    padding: 0px;
+    vertical-align: 0;
+    margin: 0;
+    padding: 0;
     /*background-color: yellow;*/
 }
 .box1 {
     width: 60px;
     display: inline-block;
-    vertical-align: 0px;
-    margin: 0px;
-    padding: 0px;
+    vertical-align: 0;
+    margin: 0;
+    padding: 0;
     /*background-color: yellow;*/
 }
 
@@ -63,7 +68,7 @@ label {
     display: inline-block;
     width: 40px;
     height: 2px;
-    padding: 0px;
+    padding: 0;
     /*border: 1px solid blue;*/
     /*background-color: blueviolet;*/
 }
@@ -72,7 +77,7 @@ label {
     display: inline-block;
     width: 20px;
     height: 2px;
-    padding: 0px;
+    padding: 0;
     /*border: 1px solid blue;*/
     /*background-color: aquamarine;*/
 }
@@ -87,12 +92,21 @@ input:focus {
     background: #eaeaea;
 }
 
-input, textarea {
-    width: 249px;
+input {
+    width: 250px;
 }
 
 textarea {
     height: 100px;
+    width: 350px;
+}
+
+.select1 {
+    overflow: scroll; /* Добавляем полосы прокрутки */
+    width: 120px; /* Ширина блока */
+    height: 70px; /* Высота блока */
+    padding: 5px; /* Поля вокруг текста */
+    border: solid 1px black; /* Параметры рамки */
 }
 
 select {
